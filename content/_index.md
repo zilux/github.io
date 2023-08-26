@@ -1,7 +1,10 @@
 ---
 title: Introduction
 type: docs
+bookToC: false
 ---
+
+![Drag Racing](/images/proces_mem.jpg)      
 
 # Introductionsx
 
