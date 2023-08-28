@@ -1,6 +1,6 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://zilux.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'My New Zilux Site'
 theme = 'hugo-book'
 
 [params]
