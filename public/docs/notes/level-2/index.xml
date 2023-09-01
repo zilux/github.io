@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zilux&#39;s Notes</title>
+    <link>http://zilux.github.io/docs/notes/level-2/</link>
+    <description>Recent content on Zilux&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://zilux.github.io/docs/notes/level-2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>http://zilux.github.io/docs/notes/level-2/git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zilux.github.io/docs/notes/level-2/git/</guid>
+      <description>git log # ... ↕ $ alias glp=&amp;quot;git log --pretty=oneline&amp;quot; $ alias glpp=&#39;git log --pretty=format:&amp;quot;%h - %an, %ar : %s&amp;quot;&#39; $ git log -S Test ==&amp;gt; laat alles zien waarin vandering Test mee te maken heeft $ git log --pretty=format:&amp;quot;%h %s&amp;quot; --graph $ git log --oneline amend commit # ... ↕ $ git commit -m &#39;Initial commit&#39; $ git add forgotten_file $ git commit --amend Unstaging a Staged File # $ git restore --staged CONTRIBUTING.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://zilux.github.io/docs/notes/level-2/xx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zilux.github.io/docs/notes/level-2/xx/</guid>
+      <description> test # </description>
+    </item>
+    
+  </channel>
+</rss>
