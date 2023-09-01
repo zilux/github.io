@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zilux&#39;s Notes</title>
+    <link>http://zilux.github.io/docs/notes/linux/</link>
+    <description>Recent content on Zilux&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://zilux.github.io/docs/notes/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>http://zilux.github.io/docs/notes/linux/git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zilux.github.io/docs/notes/linux/git/</guid>
+      <description>git log # ... ↕ $ alias glp=&amp;quot;git log --pretty=oneline&amp;quot; $ alias glpp=&#39;git log --pretty=format:&amp;quot;%h - %an, %ar : %s&amp;quot;&#39; $ git log -S Test ==&amp;gt; laat alles zien waarin vandering Test mee te maken heeft $ git log --pretty=format:&amp;quot;%h %s&amp;quot; --graph $ git log --oneline amend commit # ... ↕ $ git commit -m &#39;Initial commit&#39; $ git add forgotten_file $ git commit --amend Unstaging a Staged File # $ git restore --staged CONTRIBUTING.</description>
+    </item>
+    
+    <item>
+      <title>dracut</title>
+      <link>http://zilux.github.io/docs/notes/linux/dracut/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zilux.github.io/docs/notes/linux/dracut/</guid>
+      <description>Dracut # Used to create a new initrd or to change the initrd.
+Linux manual online voor dracut
+Fedore: dracut problems Fedore: grub2
+onder Linux # lsinitrd dracut -force # maak generic initramfs Summary of dracut kernel command line options
+A selection of the most common debugging related dracut options: rd.shell
+Drop to a shell, if the initramfs fails. rd.debug
+Set -x for the dracut shell.
+rd.break=[cmdline|pre-udev|pre-trigger|initqueue|pre-mount|mount|pre-pivot|cleanup] Set udev to loglevel info rd.</description>
+    </item>
+    
+  </channel>
+</rss>
