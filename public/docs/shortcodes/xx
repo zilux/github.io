@@ -1,0 +1,152 @@
+# GIT
+
+### **git log**
+
+    $ alias glp="git log --pretty=oneline"  
+    $ alias glpp='git log --pretty=format:"%h - %an, %ar : %s"'  
+    $ git log -S Test      ==> laat alles zien waarin vandering Test mee te maken heeft  
+    $ git log --pretty=format:"%h %s" --graph  
+    $ git log --oneline
+
+### Voorgaande commit overschrijven ( --amend)
+
+    $ git commit -m 'Initial commit'
+    $ git add forgotten_file
+    $ git commit --amend
+
+### Unstaging a Staged File with git restore
+
+    $ git restore --staged CONTRIBUTING.md
+
+### Unmodifying a Modified File with git restore
+
+    $ git restore CONTRIBUTING.md
+
+### checkout tijdelijk een bepaalde commit
+
+    $ git checkout 3c65a398d82b8ee2c6c966e596169432053af533
+
+### checkout een bepaalde commit in een nieuwe branch
+
+    $ git checkout -b newbranch 3c65a39
+
+### delete local branch
+
+    $ git branch -d pipo
+
+### delete remote branch
+
+    $ git push origin --delete remoteBranchName
+    of
+    $ git push origin :fix/auth
+
+### sync branch list
+
+    $ git fetch
+    -p = prune delete local branches if not exist in remote
+
+### show local en remote branches
+
+    $ git branch -a     \# local + remote
+    $ git branch -r     \# alleen remote
+
+### Return to previous commit and push it
+
+```
+$ git log --oneline git 
+$ checkout <commit-id> .   # watch to include '.'
+$ git add .
+$ git commit -m "Reverting to <commit-id>"
+$ git push
+```
+
+### How to remove git commit history
+
+```
+git checkout --orphan latest_branch.
+git add -A.
+git commit -am "Initial commit message" #Committing the changes.
+git branch -D main #Deleting master branch.
+git branch -m main #renaming branch as master.
+git push -f origin main #pushes to master branch.
+```
+
+## REMOTES
+
+    $ git clone https://github.com/schacon/ticgit
+    $ cd ticgit
+    $ git remote
+    $ git remote -v
+    
+    $ git fetch
+    $ git pull
+    $ git push 
+    
+    $ git checkout -b MyNewBranch
+    $ git push -u origin MyNewBranch
+    $ git push origin -d MyNewBranch    \# delete remote branch
+
+### inspecting remote
+
+    $ git remote show origin
+
+## Tags
+
+### listing tags
+
+    $ git tag
+    $ git tag v1.0.3
+
+### Create Annotated Tags
+
+    $ git tag -a v1.0 -m "my version 1.0"
+    $ git push origin v1.0          \# tag pushen naar remote
+    $ git push origin --tags        \# alle tags in 1 keer naar remote pushen
+    $ git push --tags
+
+### lightweigt tags
+
+    $ git tag v1.0.1
+    $ git show v1.0.1
+
+### list remote tags
+
+    $ git ls-remote --tags origin
+    $ git fetch         \# haal ook alle tags op
+
+### Deleting tags
+
+    $ git tag -d v1.4-lw
+    $ git push origin --delete v1.4-lw
+
+### checking out tags
+
+    $ git fetch         \# haal ook alle tags op 
+    $ git checkout -b Feature/v1 v1.0.1
+
+## git aliases
+
+    $ git config --global alias.ll 'log --pretty=format:"%h %s" --graph'
+    $ git config --global alias.co checkout
+    $ git config --global alias.br branch
+    $ git config --global alias.ci commit
+    $ git config --global alias.st status
+
+## Submodules
+
+### aanmaken
+
+    $ git clone  git@github.com:zilux/template_play.git
+    $ cd template_play/
+    $ mkdir -p collections/ansible_collections
+    $ git submodule add git@github.com:zilux/template_collection.git collections/ansible_collections/template_collection.git template_collection
+
+### uitchecken
+
+    $ git clone https://github.com/chaconinc/MainProject
+    $ git submodule init
+    $ git submodule update
+
+of dit alles in 1 go
+
+    $ git clone --recurse-submodules https://github.com/chaconinc/MainProject

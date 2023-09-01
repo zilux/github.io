@@ -4,7 +4,7 @@ type: docs
 bookToC: false
 ---
 
-![Process_Mem](/images/proces_mem.jpg)      
+![Process_Mem]('screenshot.png')      
 
 
 

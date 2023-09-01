@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Git # git log # ... ↕ $ alias glp=&quot;git log --pretty=oneline&quot; $ alias glpp=&#39;git log --pretty=format:&quot;%h - %an, %ar : %s&quot;&#39; $ git log -S Test ==&gt; laat alles zien waarin vandering Test mee te maken heeft $ git log --pretty=format:&quot;%h %s&quot; --graph $ git log --oneline amend commit # ... ↕ $ git commit -m &#39;Initial commit&#39; $ git add forgotten_file $ git commit --amend Unstaging a Staged File # $ git restore --staged CONTRIBUTING.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Git" />
+<meta property="og:description" content="Git # git log # ... ↕ $ alias glp=&quot;git log --pretty=oneline&quot; $ alias glpp=&#39;git log --pretty=format:&quot;%h - %an, %ar : %s&quot;&#39; $ git log -S Test ==&gt; laat alles zien waarin vandering Test mee te maken heeft $ git log --pretty=format:&quot;%h %s&quot; --graph $ git log --oneline amend commit # ... ↕ $ git commit -m &#39;Initial commit&#39; $ git add forgotten_file $ git commit --amend Unstaging a Staged File # $ git restore --staged CONTRIBUTING." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://zilux.github.io/docs/notes/git/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Git | My Brand New Site</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="stylesheet" href="/book.min.8255b2af0a7e39951dde4440c56c43aba9682f5ac19e2e8d466437aebaa902a1.css" integrity="sha256-glWyrwp&#43;OZUd3kRAxWxDq6loL1rBni6NRmQ3rrqpAqE=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.5607cf89fb67e02ae5fc9fc505eaec78c28687b10a4663627de98efece99e433.js" integrity="sha256-VgfPiftn4Crl/J/FBerseMKGh7EKRmNifemO/s6Z5DM=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>My Brand New Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/example/" class="">Example Site</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/table-of-contents/" class="">Table of Contents</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/table-of-contents/with-toc/" class="">With ToC</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/table-of-contents/without-toc/" class="">Without ToC</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4e46b01272d410b3a99461d79326ddf4" class="toggle"  />
+    <label for="section-4e46b01272d410b3a99461d79326ddf4" class="flex justify-between">
+      <a role="button" class="">Collapsed</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/collapsed/3rd-level/" class="">3rd Level</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/collapsed/3rd-level/4th-level/" class="">4th Level</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/notes/" class="">Notes</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/notes/git/" class="active">Git</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Shortcodes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/buttons/" class="">Buttons</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/columns/" class="">Columns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/details/" class="">Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/expand/" class="">Expand</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/hints/" class="">Hints</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/katex/" class="">Katex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/mermaid/" class="">Mermaid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="toggle"  />
+    <label for="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="flex justify-between">
+      <a href="/docs/shortcodes/section/" class="">Section</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/section/first-page/" class="">First Page</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/section/second-page/" class="">Second Page</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/shortcodes/tabs/" class="">Tabs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Blog
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Git</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#git-log">git log</a></li>
+        <li><a href="#amend-commit">amend commit</a></li>
+        <li><a href="#unstaging-a-staged-file">Unstaging a Staged File</a></li>
+        <li><a href="#unmodifying-a-modified-file">Unmodifying a Modified File</a></li>
+        <li><a href="#checkout-a-commit">checkout a commit</a></li>
+        <li><a href="#checkout-a-commit-in-new-branch">checkout a commit in new branch</a></li>
+        <li><a href="#delete-local-branch">delete local branch</a></li>
+        <li><a href="#delete-remote-branch">delete remote branch</a></li>
+        <li><a href="#sync-branch-list">sync branch list</a></li>
+        <li><a href="#show-local-en-remote-branches">show local en remote branches</a></li>
+        <li><a href="#return-to-previous-commit">Return to previous commit</a></li>
+        <li><a href="#how-to-remove-git-commit-history">How to remove git commit history</a></li>
+        <li><a href="#remotes">REMOTES</a></li>
+        <li><a href="#inspecting-remote">inspecting remote</a></li>
+        <li><a href="#tags">Tags</a></li>
+        <li><a href="#listing-tags">listing tags</a></li>
+        <li><a href="#create-annotated-tags">Create Annotated Tags</a></li>
+        <li><a href="#lightweigt-tags">lightweigt tags</a></li>
+        <li><a href="#list-remote-tags">list remote tags</a></li>
+        <li><a href="#deleting-tags">Deleting tags</a></li>
+        <li><a href="#checking-out-tags">checking out tags</a></li>
+        <li><a href="#git-aliases">git aliases</a></li>
+        <li><a href="#submodules">Submodules</a></li>
+        <li><a href="#aanmaken">aanmaken</a></li>
+        <li><a href="#uitchecken">uitchecken</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="git">
+  Git
+  <a class="anchor" href="#git">#</a>
+</h1>
+<h3 id="git-log">
+  git log
+  <a class="anchor" href="#git-log">#</a>
+</h3>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>...</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <pre><code>$ alias glp=&quot;git log --pretty=oneline&quot;  
+$ alias glpp='git log --pretty=format:&quot;%h - %an, %ar : %s&quot;'  
+$ git log -S Test      ==&gt; laat alles zien waarin vandering Test mee te maken heeft  
+$ git log --pretty=format:&quot;%h %s&quot; --graph  
+$ git log --oneline
+</code></pre>
+
+    </div>
+  </label>
+</div>
+
+<h3 id="amend-commit">
+  amend commit
+  <a class="anchor" href="#amend-commit">#</a>
+</h3>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>...</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <pre><code>$ git commit -m 'Initial commit'
+$ git add forgotten_file
+$ git commit --amend
+</code></pre>
+
+    </div>
+  </label>
+</div>
+
+<h3 id="unstaging-a-staged-file">
+  Unstaging a Staged File
+  <a class="anchor" href="#unstaging-a-staged-file">#</a>
+</h3>
+<pre><code>$ git restore --staged CONTRIBUTING.md
+</code></pre>
+<h3 id="unmodifying-a-modified-file">
+  Unmodifying a Modified File
+  <a class="anchor" href="#unmodifying-a-modified-file">#</a>
+</h3>
+<pre><code>$ git restore CONTRIBUTING.md
+</code></pre>
+<h3 id="checkout-a-commit">
+  checkout a commit
+  <a class="anchor" href="#checkout-a-commit">#</a>
+</h3>
+<pre><code>$ git checkout 3c65a398d82b8ee2c6c966e596169432053af533
+</code></pre>
+<h3 id="checkout-a-commit-in-new-branch">
+  checkout a commit in new branch
+  <a class="anchor" href="#checkout-a-commit-in-new-branch">#</a>
+</h3>
+<pre><code>$ git checkout -b newbranch 3c65a39
+</code></pre>
+<h3 id="delete-local-branch">
+  delete local branch
+  <a class="anchor" href="#delete-local-branch">#</a>
+</h3>
+<pre><code>$ git branch -d pipo
+</code></pre>
+<h3 id="delete-remote-branch">
+  delete remote branch
+  <a class="anchor" href="#delete-remote-branch">#</a>
+</h3>
+<pre><code>$ git push origin --delete remoteBranchName
+or
+$ git push origin :fix/auth
+</code></pre>
+<h3 id="sync-branch-list">
+  sync branch list
+  <a class="anchor" href="#sync-branch-list">#</a>
+</h3>
+<pre><code>$ git fetch [-p]
+</code></pre>
+<h3 id="show-local-en-remote-branches">
+  show local en remote branches
+  <a class="anchor" href="#show-local-en-remote-branches">#</a>
+</h3>
+<pre><code>$ git branch -a     \# local + remote
+$ git branch -r     \# alleen remote
+</code></pre>
+<h3 id="return-to-previous-commit">
+  Return to previous commit
+  <a class="anchor" href="#return-to-previous-commit">#</a>
+</h3>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>...</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <pre><code>$ git log --oneline git 
+$ checkout &lt;commit-id&gt; .   # watch to include '.'
+$ git add .
+$ git commit -m &quot;Reverting to &lt;commit-id&gt;&quot;
+$ git push
+</code></pre>
+
+    </div>
+  </label>
+</div>
+
+<h3 id="how-to-remove-git-commit-history">
+  How to remove git commit history
+  <a class="anchor" href="#how-to-remove-git-commit-history">#</a>
+</h3>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>...</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <pre><code>git checkout --orphan latest_branch.
+git add -A.
+git commit -am &quot;Initial commit message&quot; #Committing the changes.
+git branch -D main #Deleting master branch.
+git branch -m main #renaming branch as master.
+git push -f origin main #pushes to master branch.
+</code></pre>
+
+    </div>
+  </label>
+</div>
+
+<h3 id="remotes">
+  REMOTES
+  <a class="anchor" href="#remotes">#</a>
+</h3>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>...</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <pre><code>$ git clone https://github.com/schacon/ticgit
+$ cd ticgit
+$ git remote
+$ git remote -v
+
+$ git fetch
+$ git pull
+$ git push 
+
+$ git checkout -b MyNewBranch
+$ git push -u origin MyNewBranch
+$ git push origin -d MyNewBranch    \# delete remote branch
+</code></pre>
+
+    </div>
+  </label>
+</div>
+
+<h3 id="inspecting-remote">
+  inspecting remote
+  <a class="anchor" href="#inspecting-remote">#</a>
+</h3>
+<pre><code>$ git remote show origin
+</code></pre>
+<h3 id="tags">
+  Tags
+  <a class="anchor" href="#tags">#</a>
+</h3>
+<h3 id="listing-tags">
+  listing tags
+  <a class="anchor" href="#listing-tags">#</a>
+</h3>
+<pre><code>$ git tag
+$ git tag v1.0.3
+</code></pre>
+<h3 id="create-annotated-tags">
+  Create Annotated Tags
+  <a class="anchor" href="#create-annotated-tags">#</a>
+</h3>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>...</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <pre><code>$ git tag -a v1.0 -m &quot;my version 1.0&quot;
+$ git push origin v1.0          \# tag pushen naar remote
+$ git push origin --tags        \# alle tags in 1 keer naar remote pushen
+$ git push --tags
+</code></pre>
+
+    </div>
+  </label>
+</div>
+
+<h3 id="lightweigt-tags">
+  lightweigt tags
+  <a class="anchor" href="#lightweigt-tags">#</a>
+</h3>
+<pre><code>$ git tag v1.0.1
+$ git show v1.0.1
+</code></pre>
+<h3 id="list-remote-tags">
+  list remote tags
+  <a class="anchor" href="#list-remote-tags">#</a>
+</h3>
+<pre><code>$ git ls-remote --tags origin
+$ git fetch         \# haal ook alle tags op
+</code></pre>
+<h3 id="deleting-tags">
+  Deleting tags
+  <a class="anchor" href="#deleting-tags">#</a>
+</h3>
+<pre><code>$ git tag -d v1.4-lw
+$ git push origin --delete v1.4-lw
+</code></pre>
+<h3 id="checking-out-tags">
+  checking out tags
+  <a class="anchor" href="#checking-out-tags">#</a>
+</h3>
+<pre><code>$ git fetch         \# haal ook alle tags op 
+$ git checkout -b Feature/v1 v1.0.1
+</code></pre>
+<h3 id="git-aliases">
+  git aliases
+  <a class="anchor" href="#git-aliases">#</a>
+</h3>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>...</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <pre><code>$ git config --global alias.ll 'log --pretty=format:&quot;%h %s&quot; --graph'
+$ git config --global alias.co checkout
+$ git config --global alias.br branch
+$ git config --global alias.ci commit
+$ git config --global alias.st status
+</code></pre>
+
+    </div>
+  </label>
+</div>
+
+<h3 id="submodules">
+  Submodules
+  <a class="anchor" href="#submodules">#</a>
+</h3>
+<h3 id="aanmaken">
+  aanmaken
+  <a class="anchor" href="#aanmaken">#</a>
+</h3>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>...</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <pre><code>$ git clone  git@github.com:zilux/template_play.git
+$ cd template_play/
+$ mkdir -p collections/ansible_collections
+$ git submodule add git@github.com:zilux/template_collection.git collections/ansible_collections/template_collection.git template_collection
+</code></pre>
+
+    </div>
+  </label>
+</div>
+
+<h3 id="uitchecken">
+  uitchecken
+  <a class="anchor" href="#uitchecken">#</a>
+</h3>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>...</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <pre><code>$ git clone https://github.com/chaconinc/MainProject
+$ git submodule init
+$ git submodule update
+</code></pre>
+
+    </div>
+  </label>
+</div>
+
+<p>of dit alles in 1 go</p>
+<pre><code>$ git clone --recurse-submodules https://github.com/chaconinc/MainProject
+</code></pre>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#git-log">git log</a></li>
+        <li><a href="#amend-commit">amend commit</a></li>
+        <li><a href="#unstaging-a-staged-file">Unstaging a Staged File</a></li>
+        <li><a href="#unmodifying-a-modified-file">Unmodifying a Modified File</a></li>
+        <li><a href="#checkout-a-commit">checkout a commit</a></li>
+        <li><a href="#checkout-a-commit-in-new-branch">checkout a commit in new branch</a></li>
+        <li><a href="#delete-local-branch">delete local branch</a></li>
+        <li><a href="#delete-remote-branch">delete remote branch</a></li>
+        <li><a href="#sync-branch-list">sync branch list</a></li>
+        <li><a href="#show-local-en-remote-branches">show local en remote branches</a></li>
+        <li><a href="#return-to-previous-commit">Return to previous commit</a></li>
+        <li><a href="#how-to-remove-git-commit-history">How to remove git commit history</a></li>
+        <li><a href="#remotes">REMOTES</a></li>
+        <li><a href="#inspecting-remote">inspecting remote</a></li>
+        <li><a href="#tags">Tags</a></li>
+        <li><a href="#listing-tags">listing tags</a></li>
+        <li><a href="#create-annotated-tags">Create Annotated Tags</a></li>
+        <li><a href="#lightweigt-tags">lightweigt tags</a></li>
+        <li><a href="#list-remote-tags">list remote tags</a></li>
+        <li><a href="#deleting-tags">Deleting tags</a></li>
+        <li><a href="#checking-out-tags">checking out tags</a></li>
+        <li><a href="#git-aliases">git aliases</a></li>
+        <li><a href="#submodules">Submodules</a></li>
+        <li><a href="#aanmaken">aanmaken</a></li>
+        <li><a href="#uitchecken">uitchecken</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
