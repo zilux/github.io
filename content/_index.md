@@ -5,7 +5,6 @@ bookToC: false
 ---
 
 ![Drag Racing](/images/proces_mem.jpg)      
-![Drag Racing](/images/ziluxlogo.png)      
 
 
 
