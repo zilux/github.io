@@ -4,14 +4,14 @@ type: docs
 bookToC: false
 ---
 
-![Drag Racing](./images/proces_mem.jpg)      
+![Drag Racing](/images/proces_mem.jpg)      
 
 # Introductionsx
 
 {{< columns >}}
 ## Astris ipse furtiva
 
-Est in vagis et Pittheus tu arge accipiter regia iram vocatur nurus. Omnes ut
+BEst in vagis et Pittheus tu arge accipiter regia iram vocatur nurus. Omnes ut
 olivae sensit **arma sorori** deducit, inesset **crudus**, ego vetuere aliis,
 modo arsit? Utinam rapta fiducia valuere litora _adicit cursu_, ad facies
 
