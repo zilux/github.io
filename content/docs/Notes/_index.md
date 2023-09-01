@@ -1,10 +1,11 @@
 ---
 weight: 1
 bookFlatSection: false
+bookCollapseSection: true
 title: "Notes"
 ---
 
-
+Linux Notes
 
 
 ![memory](/images/mydocs2_small.png)
@@ -24,7 +25,7 @@ title: "Notes"
 ##### Hugo
 
 [Hugo Theme my-book](https://github.com/alex-shpak/hugo-book)  
-[Hugo Quickstartk](https://gohugo.io/getting-started/quick-start/)   
+[Hugo Quickstart](https://gohugo.io/getting-started/quick-start/)   
 [Hugo on Githab pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/)   
 
 

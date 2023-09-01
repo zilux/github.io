@@ -2,19 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://zilux.github.io/docs/notes/git/</loc>
+    <loc>http://zilux.github.io/docs/ansible/</loc>
+  </url><url>
+    <loc>http://zilux.github.io/docs/notes/level-2/git/</loc>
   </url><url>
     <loc>http://zilux.github.io/docs/notes/</loc>
   </url><url>
-    <loc>http://zilux.github.io/docs/notes/example/</loc>
+    <loc>http://zilux.github.io/docs/notes/pipo/</loc>
+  </url><url>
+    <loc>http://zilux.github.io/docs/ansible/example/</loc>
   </url><url>
     <loc>http://zilux.github.io/docs/example/table-of-contents/with-toc/</loc>
-  </url><url>
-    <loc>http://zilux.github.io/docs/example/</loc>
   </url><url>
     <loc>http://zilux.github.io/docs/example/table-of-contents/without-toc/</loc>
   </url><url>
     <loc>http://zilux.github.io/docs/shortcodes/</loc>
+  </url><url>
+    <loc>http://zilux.github.io/docs/example/</loc>
   </url><url>
     <loc>http://zilux.github.io/posts/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
@@ -68,11 +72,25 @@
     <loc>http://zilux.github.io/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://zilux.github.io/docs/example/collapsed/3rd-level/4th-level/</loc>
+    <loc>http://zilux.github.io/docs/example/collapsed/another_level/</loc>
   </url><url>
-    <loc>http://zilux.github.io/docs/example/collapsed/3rd-level/</loc>
+    <loc>http://zilux.github.io/docs/example/collapsed/another_level/pipo/</loc>
+  </url><url>
+    <loc>http://zilux.github.io/docs/example/collapsed/level/</loc>
+  </url><url>
+    <loc>http://zilux.github.io/docs/example/collapsed/level/xxx/</loc>
+  </url><url>
+    <loc>http://zilux.github.io/docs/example/collapsed/level/yyy/</loc>
+  </url><url>
+    <loc>http://zilux.github.io/docs/example/collapsed/level/zzz/</loc>
   </url><url>
     <loc>http://zilux.github.io/docs/example/hidden/</loc>
+  </url><url>
+    <loc>http://zilux.github.io/docs/notes/a/</loc>
+  </url><url>
+    <loc>http://zilux.github.io/docs/notes/level-2/</loc>
+  </url><url>
+    <loc>http://zilux.github.io/docs/notes/level-2/xx/</loc>
   </url><url>
     <loc>http://zilux.github.io/docs/shortcodes/buttons/</loc>
   </url><url>

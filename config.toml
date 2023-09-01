@@ -1,6 +1,6 @@
 baseURL = 'http://zilux.github.io/'
 languageCode = 'en-us'
-title = "Zilux's Docs"
+title = "Zilux's Notes"
 theme = 'hugo-book'
 
 [params]
