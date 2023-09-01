@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Notes on My Brand New Site</title>
+    <title>Notes on Zilux&#39;s Docs</title>
     <link>http://zilux.github.io/docs/notes/</link>
-    <description>Recent content in Notes on My Brand New Site</description>
+    <description>Recent content in Notes on Zilux&#39;s Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://zilux.github.io/docs/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://zilux.github.io/docs/notes/git/</guid>
-      <description>Git # git log # ... ↕ $ alias glp=&amp;quot;git log --pretty=oneline&amp;quot; $ alias glpp=&#39;git log --pretty=format:&amp;quot;%h - %an, %ar : %s&amp;quot;&#39; $ git log -S Test ==&amp;gt; laat alles zien waarin vandering Test mee te maken heeft $ git log --pretty=format:&amp;quot;%h %s&amp;quot; --graph $ git log --oneline amend commit # ... ↕ $ git commit -m &#39;Initial commit&#39; $ git add forgotten_file $ git commit --amend Unstaging a Staged File # $ git restore --staged CONTRIBUTING.</description>
+      <description>git log # ... ↕ $ alias glp=&amp;quot;git log --pretty=oneline&amp;quot; $ alias glpp=&#39;git log --pretty=format:&amp;quot;%h - %an, %ar : %s&amp;quot;&#39; $ git log -S Test ==&amp;gt; laat alles zien waarin vandering Test mee te maken heeft $ git log --pretty=format:&amp;quot;%h %s&amp;quot; --graph $ git log --oneline amend commit # ... ↕ $ git commit -m &#39;Initial commit&#39; $ git add forgotten_file $ git commit --amend Unstaging a Staged File # $ git restore --staged CONTRIBUTING.</description>
     </item>
     
     <item>

@@ -2,17 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://zilux.github.io/docs/example/</loc>
-  </url><url>
     <loc>http://zilux.github.io/docs/notes/git/</loc>
+  </url><url>
+    <loc>http://zilux.github.io/docs/notes/</loc>
   </url><url>
     <loc>http://zilux.github.io/docs/notes/example/</loc>
   </url><url>
     <loc>http://zilux.github.io/docs/example/table-of-contents/with-toc/</loc>
   </url><url>
+    <loc>http://zilux.github.io/docs/example/</loc>
+  </url><url>
     <loc>http://zilux.github.io/docs/example/table-of-contents/without-toc/</loc>
   </url><url>
-    <loc>http://zilux.github.io/docs/notes/</loc>
+    <loc>http://zilux.github.io/docs/shortcodes/</loc>
   </url><url>
     <loc>http://zilux.github.io/posts/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
@@ -71,8 +73,6 @@
     <loc>http://zilux.github.io/docs/example/collapsed/3rd-level/</loc>
   </url><url>
     <loc>http://zilux.github.io/docs/example/hidden/</loc>
-  </url><url>
-    <loc>http://zilux.github.io/docs/shortcodes/</loc>
   </url><url>
     <loc>http://zilux.github.io/docs/shortcodes/buttons/</loc>
   </url><url>

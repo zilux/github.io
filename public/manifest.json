@@ -1,6 +1,6 @@
 {
-  "name": "My Brand New Site",
-  "short_name": "My Brand New Site",
+  "name": "Zilux's Docs",
+  "short_name": "Zilux's Docs",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

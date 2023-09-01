@@ -9,7 +9,8 @@ weight: 1
 # bookSearchExclude: false
 ---
 
-# Git
+![Process_Mem](/images/git.png)
+
 
 ### git log 
 {{< expand "..." >}}
@@ -84,7 +85,7 @@ weight: 1
     git push -f origin main #pushes to master branch.
 {{< /expand >}}
 
-### REMOTES
+### remotes
 
 {{< expand "..." >}}
     $ git clone https://github.com/schacon/ticgit
@@ -112,7 +113,7 @@ weight: 1
     $ git tag
     $ git tag v1.0.3
 
-### Create Annotated Tags
+### create Annotated Tags
 
 {{< expand "..." >}}
     $ git tag -a v1.0 -m "my version 1.0"
