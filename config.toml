@@ -7,4 +7,5 @@ theme = 'hugo-book'
     # (Optional, default light) Sets color theme: light, dark or auto.
   # Theme 'auto' switches between dark and light modes based on browser/os preferences
   BookTheme = 'dark'
-  BookLogo = 'ziluxlogo.png'
+  # BookLogo = 'ziluxlogo.png'
+  BookLogo = 'FreeBSD120trans.png'

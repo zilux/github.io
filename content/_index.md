@@ -4,15 +4,13 @@ type: docs
 bookToC: false
 ---
 
+![Process_Mem](/images/mydocs_small.png)     
 
 
+### Site for my public Linux related  documentation
 
 
-# Introductions
-![Process_Mem](/images/hugo.jpg)         
-![Process_Mem](/images/hugo2.png)     
-![Process_Mem](/images/esmeralda.jpg)     
-![Process_Mem](/images/ansible.png)     
-![Process_Mem](/images/git.png)     
+I wanted to have a simple site where I can put some documentation in it.  
+I found this to be pretty easy to do with **HUGO** and **my-book** theme.
 
-Waarom niet
+Hope you enjoy ...
