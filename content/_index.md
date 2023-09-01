@@ -4,7 +4,7 @@ type: docs
 bookToC: false
 ---
 
-![Drag Racing](/images/proces_mem.jpg)      
+![Process_Mem](/images/proces_mem.jpg)      
 
 
 
