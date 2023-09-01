@@ -9,37 +9,20 @@
     <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate><atom:link href="http://zilux.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git</title>
-      <link>http://zilux.github.io/docs/notes/level-2/git/</link>
+      <link>http://zilux.github.io/docs/notes/linux/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://zilux.github.io/docs/notes/level-2/git/</guid>
+      <guid>http://zilux.github.io/docs/notes/linux/git/</guid>
       <description>git log # ... ↕ $ alias glp=&amp;quot;git log --pretty=oneline&amp;quot; $ alias glpp=&#39;git log --pretty=format:&amp;quot;%h - %an, %ar : %s&amp;quot;&#39; $ git log -S Test ==&amp;gt; laat alles zien waarin vandering Test mee te maken heeft $ git log --pretty=format:&amp;quot;%h %s&amp;quot; --graph $ git log --oneline amend commit # ... ↕ $ git commit -m &#39;Initial commit&#39; $ git add forgotten_file $ git commit --amend Unstaging a Staged File # $ git restore --staged CONTRIBUTING.</description>
     </item>
     
     <item>
-      <title>Pipo</title>
-      <link>http://zilux.github.io/docs/notes/pipo/</link>
+      <title>New</title>
+      <link>http://zilux.github.io/docs/notes/ansible/new/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://zilux.github.io/docs/notes/pipo/</guid>
-      <description>
-Just a little test # aap noot :smile:
-Here&amp;rsquo;s an image of a drag racer in action:
-Move along.
-xxxxx # </description>
-    </item>
-    
-    <item>
-      <title>Pipo2 in ansible</title>
-      <link>http://zilux.github.io/docs/ansible/example/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zilux.github.io/docs/ansible/example/</guid>
-      <description>
-Just a little test # aap noot :smile:
-Here&amp;rsquo;s an image of a drag racer in action:
-Move along.
-xxxxx # </description>
+      <guid>http://zilux.github.io/docs/notes/ansible/new/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -53,6 +36,22 @@ Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara po
     </item>
     
     <item>
+      <title>dracut</title>
+      <link>http://zilux.github.io/docs/notes/linux/dracut/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zilux.github.io/docs/notes/linux/dracut/</guid>
+      <description>Dracut # Used to create a new initrd or to change the initrd.
+Linux manual online voor dracut
+Fedore: dracut problems Fedore: grub2
+onder Linux # lsinitrd dracut -force # maak generic initramfs Summary of dracut kernel command line options
+A selection of the most common debugging related dracut options: rd.shell
+Drop to a shell, if the initramfs fails. rd.debug
+Set -x for the dracut shell.
+rd.break=[cmdline|pre-udev|pre-trigger|initqueue|pre-mount|mount|pre-pivot|cleanup] Set udev to loglevel info rd.</description>
+    </item>
+    
+    <item>
       <title>Without ToC</title>
       <link>http://zilux.github.io/docs/example/table-of-contents/without-toc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -60,6 +59,16 @@ Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara po
       <guid>http://zilux.github.io/docs/example/table-of-contents/without-toc/</guid>
       <description>At me ipso nepotibus nunc celebratior genus # Tanto oblite # Lorem markdownum pectora novis patenti igne sua opus aurae feras materiaque illic demersit imago et aristas questaque posset. Vomit quoque suo inhaesuro clara. Esse cumque, per referri triste. Ut exponit solisque communis in tendens vincetis agisque iamque huic bene ante vetat omina Thebae rates. Aeacus servat admonitu concidit, ad resimas vultus et rugas vultu dignamque Siphnon.
 Quam iugulum regia simulacra, plus meruit humo pecorumque haesit, ab discedunt dixit: ritu pharetramque.</description>
+    </item>
+    
+    <item>
+      <title>Example</title>
+      <link>http://zilux.github.io/docs/notes/example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zilux.github.io/docs/notes/example/</guid>
+      <description>
+This is just a place holder # </description>
     </item>
     
     <item>
@@ -151,24 +160,6 @@ Venasque repulsa Samos qui, exspectatum eram animosque hinc, aut manes, Assyrii.
       <guid>http://zilux.github.io/docs/example/hidden/</guid>
       <description>This page is hidden in menu # Quondam non pater est dignior ille Eurotas # Latent te facies # Lorem markdownum arma ignoscas vocavit quoque ille texit mandata mentis ultimus, frementes, qui in vel. Hippotades Peleus pennas conscia cuiquam Caeneus quas.
 Pater demittere evincitque reddunt Maxime adhuc pressit huc Danaas quid freta Soror ego Luctus linguam saxa ultroque prior Tatiumque inquit Saepe liquitur subita superata dederat Anius sudor Cum honorum Latona # O fallor in sustinui iussorum equidem.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://zilux.github.io/docs/notes/a/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zilux.github.io/docs/notes/a/</guid>
-      <description> TEst # </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://zilux.github.io/docs/notes/level-2/xx/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zilux.github.io/docs/notes/level-2/xx/</guid>
-      <description> test # </description>
     </item>
     
     <item>

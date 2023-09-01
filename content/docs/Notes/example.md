@@ -1,6 +1,6 @@
 ---                                                                                                                                                                                
 title: "Example"
-weight: 1
+weight: 9
 bookFlatSection: false
 bookToc: true
 bookHidden: false
@@ -12,17 +12,6 @@ bookSearchExclude: false
 
 ![Drag Racing](/images/images.png)
 
-# Just a little test
+---
 
-- aap
-- noot
-
-:smile:
-
-
-Here's an image of a drag racer in action:
-
-
-Move along.
-
-## xxxxx
+### This is just a place holder

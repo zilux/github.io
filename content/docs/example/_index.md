@@ -3,6 +3,7 @@ weight: 5
 bookFlatSection: true
 title: "Hugo Examples"
 bookCollapseSection: true
+bookHidden: true
 ---
 
 # Introduction
