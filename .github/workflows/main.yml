@@ -23,8 +23,8 @@ jobs:
           extended: true
 
       - name: Run Hugo
-        working-directory: exampleSite
-        run: hugo --themesDir ../..
+        working-directory: . 
+        run: hugo 
 
       # - name: Deploy
       #   uses: peaceiris/actions-gh-pages@v3
