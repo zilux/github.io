@@ -18,9 +18,13 @@ Linux Notes
 [RedHat console](https://console.redhat.com)  
 [RedHat partner connect](https://partnercenter.redhat.com/Dashboard_page)  
 
+[RedHat sysadmin](https://redhat.com/sysadmin)  
+
+
 ##### Ansible
 
 [Ansible docs](https://docs.ansible.com/ansible/latest)  
+[Ansible blog](https://www.ansible.com/blog)  
 
 ##### Hugo
 
@@ -28,4 +32,6 @@ Linux Notes
 [Hugo Quickstart](https://gohugo.io/getting-started/quick-start/)   
 [Hugo on Githab pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/)   
 
+##### Python
 
+[Python Coogle cursus](https://developers.google.com/edu/python)

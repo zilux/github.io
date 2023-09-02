@@ -9,6 +9,12 @@ weight: 3
 # bookSearchExclude: false
 ---
 
+## Install bridge interface
+
+Example eon how to install on **eno1** en bridge interface **br0**
+
+
+
 ```
 nmcli con add con-name br0 type bridge ifname br0 ip4 192.168.192.88/24 gw4 192.168.192.1
 nmcli con add con-name br0-slave type bridge-slave ifname eno1 master br0
