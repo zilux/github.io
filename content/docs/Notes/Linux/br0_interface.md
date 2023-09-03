@@ -9,9 +9,14 @@ weight: 3
 # bookSearchExclude: false
 ---
 
+
+![bridger](/images/bridge.jpg)
+
+--- 
+
 ## Install bridge interface
 
-Example eon how to install on **eno1** en bridge interface **br0**
+Example on how to install on **eno1** en bridge interface **br0**
 
 
 
