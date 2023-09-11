@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate><atom:link href="http://zilux.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Collections</title>
+      <link>http://zilux.github.io/docs/notes/ansible/collection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zilux.github.io/docs/notes/ansible/collection/</guid>
+      <description>Installing collections # Install collections for &amp;ldquo;local use&amp;rdquo; from galaxy/git or hub.
+from galaxy with collection on cmd-line # $ ansible-galaxy collection install community.crypto $ ansible-galaxy collection install /tmp/community-dns-1.2.0.tar.gz -p ./collections From galaxy by requirements file # ansible-galaxy collection install -r requirements.yml -p ./collections requirements.yml: --- collections: - name: community.crypto version: 1.0.2 from git by command-line: # $ ansible-galaxy collection install git@github.com:zilux/ziluxtool_collection.git -p ./collections from git by requirements.yml: # ansible-galaxy collection install -r requirements.</description>
+    </item>
+    
+    <item>
       <title>Git</title>
       <link>http://zilux.github.io/docs/notes/linux/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -62,6 +72,17 @@ Quam iugulum regia simulacra, plus meruit humo pecorumque haesit, ab discedunt d
     </item>
     
     <item>
+      <title>br0 interface</title>
+      <link>http://zilux.github.io/docs/notes/linux/br0_interface/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zilux.github.io/docs/notes/linux/br0_interface/</guid>
+      <description>
+Install bridge interface # Example on how to install on eno1 en bridge interface br0
+nmcli con add con-name br0 type bridge ifname br0 ip4 192.168.192.88/24 gw4 192.168.192.1 nmcli con add con-name br0-slave type bridge-slave ifname eno1 master br0 nmcli con modify br0 ipv4.dns 192.168.192.1 ipv4.dns-search example.nl nmcli c down br0 nmcli c up br0 nmcli c up br0-slave ping 192.168.192.1 </description>
+    </item>
+    
+    <item>
       <title>Example</title>
       <link>http://zilux.github.io/docs/notes/example/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -72,7 +93,7 @@ This is just a place holder # </description>
     </item>
     
     <item>
-      <title>XXXXXXXXXXXXXXXXXCreating a New Theme</title>
+      <title>Creating a New Theme</title>
       <link>http://zilux.github.io/posts/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
