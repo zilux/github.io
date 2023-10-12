@@ -36,6 +36,18 @@ from galaxy with collection on cmd-line # $ ansible-galaxy collection install co
     </item>
     
     <item>
+      <title>use playbook in collection</title>
+      <link>http://zilux.github.io/docs/notes/ansible/play_in_collection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zilux.github.io/docs/notes/ansible/play_in_collection/</guid>
+      <description>playbook calling play incollection # Play source vars in in first play which are also seen in play2 (import_playbook)
+--- - name: Run play in playbooks from collection qrom.test hosts: localhost tasks: - ansible.builtin.debug: msg: play1 - include_vars: pipo.yml - name: Import a playbook ansible.builtin.import_playbook: qrom.test.tester pipo.yml # This file contains:
+geheim=xxxxx playbooks/tester.yml # The content of collections/ansible_collections/qrom/test/playbooks/tester.yml
+--- - name: Tester in Playbooks hosts: localhost gather_facts: false collections: - qrom.</description>
+    </item>
+    
+    <item>
       <title>With ToC</title>
       <link>http://zilux.github.io/docs/example/table-of-contents/with-toc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
