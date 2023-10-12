@@ -1,6 +1,6 @@
 ---
 title: "use playbook in collection"
-weight: 1
+weight: 2
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false
@@ -12,7 +12,7 @@ weight: 1
 ![Process_Mem](/images/git.png)
 
 
-# playbook calling play incollection
+# Playbook calling play in collection
 
 Play source vars in in first play which are also seen in play2 (import_playbook)
 

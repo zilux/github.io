@@ -1,6 +1,6 @@
 ---
-title: "New"
-weight: 1
+title: "Template New"
+weight: 99 
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false
@@ -9,5 +9,5 @@ weight: 1
 # bookSearchExclude: false
 ---
 
-![Process_Mem](/images/git.png)
+#    ![Process_Mem](/images/git.png)
 
