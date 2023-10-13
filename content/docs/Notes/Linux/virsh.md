@@ -17,14 +17,14 @@ weight: 3
 ## start the vm
 
 ```
-$> virsh start vm1
+$ virsh start vm1
 Domain 'vm1' started
 ```
 
 ## Enumerate the disks in use
 
 ```
-$> virsh domblklist vm1
+$ virsh domblklist vm1
  Target   Source
 --------------------------------------
  vda      /var/lib/libvirt/images/vm1.qcow2
@@ -33,21 +33,21 @@ $> virsh domblklist vm1
 ## Begin backup
 
 ```
-$> virsh backup-begin vm1
+$ virsh backup-begin vm1
 Backup started
 ```
 
 ## Check job status
 
 ```
-$> virsh domjobinfo vm1
+$ virsh domjobinfo vm1
 Job type:         None
 ```
 
 ## Check completion
 
 ```
-$> virsh domjobinfo vm1 --completed
+$ virsh domjobinfo vm1 --completed
 Job type:         Completed
 Operation:        Backup
 Time elapsed:     183          ms
@@ -59,7 +59,7 @@ File total:       39.250 MiB
 ## Check backup
 
 ```
-$> ls -lash /var/lib/libvirt/images/vm1.qcow2*
+$ ls -lash /var/lib/libvirt/images/vm1.qcow2*
 15M -rw-r--r--. 1 qemu qemu 15M May 10 12:22 vm1.qcow2
 21M -rw-------. 1 root root 21M May 10 12:23 vm1.qcow2.1620642185
 ```
@@ -92,8 +92,9 @@ Delete snapshot
 
 ## External snapshots
 
-  see: https://fabianlee.org/2021/01/10/kvm-creating-and-reverting-libvirt-external-snapshots/
-  see: https://kashyapc.fedorapeople.org/virt/lc-2012/snapshots-handout.html
+ [external snapshots](https://fabianlee.org/2021/01/10/kvm-creating-and-reverting-libvirt-external-snapshots/ )
+
+  [snapshots](see: https://kashyapc.fedorapeople.org/virt/lc-2012/snapshots-handout.html)
 
    - virsh snapshot-create-as runner.qrom.nl --name snappieh  ( gives runner.qrom.nl.snappieh )
    - virsh snapshot-create-as runner.qrom.nl --name snappiehz  ( gives runner.qrom.nl.snappiehz )
@@ -113,7 +114,7 @@ Create snapshot external
    - virsh snapshot-create-as --domain runner.qrom.nl snap1 snap1-descrip --disk-only --diskspec vda,snapshot=external,file=/tmp/sn1.qcow --atomic
    - virsh snapshot-create-as --domain runner.qrom.nl snap2 snap2-descrip --disk-only --diskspec vda,snapshot=external,file=/tmp/sn2.qcow --atomic
    - virsh domblklist runner.qrom.nl  ( /tmp/sn2.qcow )
-   - virsh snapshot-list runner.qrom.nl   ( -->  /tmp/sn2.qcow )
+   - virsh snapshot-list runner.qrom.nl   
 
    - virsh blockcommit runner.qrom.nl vda --base /var/lib/libvirt/images/runner.qrom.nl.qcow2 --top /tmp/sn1.qcow --wait --verbose  ( now sn1 is gone from the chain )
 
@@ -144,22 +145,5 @@ Then create "new VM disk" based on this golden-image:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{{< button relref="/" [class="..."] >}}Get Home{{< /button >}}
 
