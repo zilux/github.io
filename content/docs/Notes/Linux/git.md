@@ -174,3 +174,5 @@ weight: 1
 of dit alles in 1 go
 
     $ git clone --recurse-submodules https://github.com/chaconinc/MainProject
+
+{{< button relref="/" >}}Go Home{{< /button >}}    

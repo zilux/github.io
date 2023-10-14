@@ -121,3 +121,6 @@ When you have successfully booted your system, run these commands to fix GRUB pe
     $ ip a add 192.168.192.91/24 dev eth0
     $ ip link set dev eth0 up
     $ ip route add default via 192.168.192.1 dev eth0
+
+
+{{< button relref="/" >}}Go Home{{< /button >}}    

@@ -145,5 +145,5 @@ Then create "new VM disk" based on this golden-image:
 
 
 
-{{< button relref="/" >}}Get Home{{< /button >}}
+{{< button relref="/" >}}Go Home{{< /button >}}
 

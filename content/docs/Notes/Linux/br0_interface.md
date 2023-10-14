@@ -16,7 +16,7 @@ weight: 3
 
 ## Install bridge interface
 
-Example on how to install on **eno1** en bridge interface **br0**
+Example on how to install on **eno1** and bridge interface **br0**
 
 
 
@@ -31,3 +31,4 @@ nmcli c up br0-slave
 ping 192.168.192.1
 ```
  
+ {{< button relref="/" >}}Go Home{{< /button >}}

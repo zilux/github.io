@@ -82,3 +82,4 @@ now really remove them
 #  restic -r /mnt/node1/restic-repo prune   
 ```
 
+{{< button relref="/" >}}Go Home{{< /button >}}
