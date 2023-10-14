@@ -65,3 +65,4 @@ Also like this ...
     task_from: invate.yml
 ```
 
+{{< button relref="/" >}}Go Home{{< /button >}}

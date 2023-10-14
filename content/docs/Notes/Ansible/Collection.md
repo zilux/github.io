@@ -158,3 +158,5 @@ ansible-galaxy collection build
 
 
 You can upload this to hub/galaxy after creating namespace and approve it.
+
+{{< button relref="/" >}}Go Home{{< /button >}}

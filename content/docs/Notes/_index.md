@@ -35,3 +35,5 @@ Linux Notes
 ##### Python
 
 [Python Coogle cursus](https://developers.google.com/edu/python)
+
+{{< button relref="/" >}}Go Home{{< /button >}}

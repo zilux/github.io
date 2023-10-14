@@ -108,3 +108,6 @@ ok: [localhost] => {
     "msg": "geheim is xxxxx"
 }
 ```
+
+
+{{< button relref="/" >}}Go Home{{< /button >}}
