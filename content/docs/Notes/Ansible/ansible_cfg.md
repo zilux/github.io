@@ -9,12 +9,6 @@ weight: 5
 # bookSearchExclude: false
 ---
 
-#    ![Process_Mem](/images/git.png)
-
-
-# {{< button relref="/" >}}Go Home{{< /button >}}
-
-
 ## Example ansible.cfg
 
 
