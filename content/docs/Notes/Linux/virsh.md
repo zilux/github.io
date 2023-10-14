@@ -94,7 +94,7 @@ Delete snapshot
 
  [external snapshots](https://fabianlee.org/2021/01/10/kvm-creating-and-reverting-libvirt-external-snapshots/)
 
- [snapshots]((https://kashyapc.fedorapeople.org/virt/lc-2012/snapshots-handout.html)
+ [snapshots](https://kashyapc.fedorapeople.org/virt/lc-2012/snapshots-handout.html)
 
    - virsh snapshot-create-as runner.qrom.nl --name snappieh  ( gives runner.qrom.nl.snappieh )
    - virsh snapshot-create-as runner.qrom.nl --name snappiehz  ( gives runner.qrom.nl.snappiehz )
