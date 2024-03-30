@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Zilux&#39;s Notes</title>
-    <link>http://zilux.github.io/docs/notes/linux/</link>
-    <description>Recent content on Zilux&#39;s Notes</description>
+    <title>Zilux&#39;s Docs</title>
+    <link>http://localhost:1313/docs/notes/linux/</link>
+    <description>Recent content on Zilux&#39;s Docs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://zilux.github.io/docs/notes/linux/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/docs/notes/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git</title>
-      <link>http://zilux.github.io/docs/notes/linux/git/</link>
+      <link>http://localhost:1313/docs/notes/linux/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zilux.github.io/docs/notes/linux/git/</guid>
+      <guid>http://localhost:1313/docs/notes/linux/git/</guid>
       <description>git log # ... ↕ $ alias glp=&amp;quot;git log --pretty=oneline&amp;quot; $ alias glpp=&#39;git log --pretty=format:&amp;quot;%h - %an, %ar : %s&amp;quot;&#39; $ git log -S Test ==&amp;gt; laat alles zien waarin vandering Test mee te maken heeft $ git log --pretty=format:&amp;quot;%h %s&amp;quot; --graph $ git log --oneline amend commit # ... ↕ $ git commit -m &#39;Initial commit&#39; $ git add forgotten_file $ git commit --amend Unstaging a Staged File # $ git restore --staged CONTRIBUTING.</description>
     </item>
-    
     <item>
       <title>dracut</title>
-      <link>http://zilux.github.io/docs/notes/linux/dracut/</link>
+      <link>http://localhost:1313/docs/notes/linux/dracut/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zilux.github.io/docs/notes/linux/dracut/</guid>
-      <description>Dracut # Used to create a new initrd or to change the initrd.
-Linux manual online voor dracut
-Fedore: dracut problems Fedore: grub2
-onder Linux # lsinitrd dracut -force # maak generic initramfs Summary of dracut kernel command line options
-A selection of the most common debugging related dracut options: rd.shell
-Drop to a shell, if the initramfs fails. rd.debug
-Set -x for the dracut shell.
-rd.break=[cmdline|pre-udev|pre-trigger|initqueue|pre-mount|mount|pre-pivot|cleanup] Set udev to loglevel info rd.</description>
+      <guid>http://localhost:1313/docs/notes/linux/dracut/</guid>
+      <description>Dracut # Used to create a new initrd or to change the initrd.&#xA;Linux manual online voor dracut&#xA;Fedore: dracut problems Fedore: grub2&#xA;onder Linux # lsinitrd dracut -force # maak generic initramfs Summary of dracut kernel command line options&#xA;A selection of the most common debugging related dracut options: rd.shell&#xA;Drop to a shell, if the initramfs fails. rd.debug&#xA;Set -x for the dracut shell.&#xA;rd.break=[cmdline|pre-udev|pre-trigger|initqueue|pre-mount|mount|pre-pivot|cleanup] Set udev to loglevel info rd.</description>
     </item>
-    
     <item>
       <title>br0 interface</title>
-      <link>http://zilux.github.io/docs/notes/linux/br0_interface/</link>
+      <link>http://localhost:1313/docs/notes/linux/br0_interface/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zilux.github.io/docs/notes/linux/br0_interface/</guid>
-      <description>
-Install bridge interface # Example on how to install on eno1 en bridge interface br0
-nmcli con add con-name br0 type bridge ifname br0 ip4 192.168.192.88/24 gw4 192.168.192.1 nmcli con add con-name br0-slave type bridge-slave ifname eno1 master br0 nmcli con modify br0 ipv4.dns 192.168.192.1 ipv4.dns-search example.nl nmcli c down br0 nmcli c up br0 nmcli c up br0-slave ping 192.168.192.1 </description>
+      <guid>http://localhost:1313/docs/notes/linux/br0_interface/</guid>
+      <description>&#xA;Install bridge interface # Example on how to install on eno1 and bridge interface br0&#xA;nmcli con add con-name br0 type bridge ifname br0 ip4 192.168.192.88/24 gw4 192.168.192.1 nmcli con add con-name br0-slave type bridge-slave ifname eno1 master br0 nmcli con modify br0 ipv4.dns 192.168.192.1 ipv4.dns-search example.nl nmcli c down br0 nmcli c up br0 nmcli c up br0-slave ping 192.168.192.1 Go Home </description>
     </item>
-    
+    <item>
+      <title>virsh</title>
+      <link>http://localhost:1313/docs/notes/linux/virsh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/notes/linux/virsh/</guid>
+      <description>Life backup vm # start the vm # $ virsh start vm1 Domain &amp;#39;vm1&amp;#39; started Enumerate the disks in use # $ virsh domblklist vm1 Target Source -------------------------------------- vda /var/lib/libvirt/images/vm1.qcow2 Begin backup # $ virsh backup-begin vm1 Backup started Check job status # $ virsh domjobinfo vm1 Job type: None Check completion # $ virsh domjobinfo vm1 --completed Job type: Completed Operation: Backup Time elapsed: 183 ms File processed: 39.</description>
+    </item>
+    <item>
+      <title>restic</title>
+      <link>http://localhost:1313/docs/notes/linux/restic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/notes/linux/restic/</guid>
+      <description>restic # Backup # mount /dev/sdb /mnt restic -r /mnt/node1/restic-repo init cd /home/pipo/ansible restic -r /mnt/node1/restic-repo backup . # dry-run # restic -r /mnt/node1/restic-repo backup . -n -vv | grep added ## dry-run restic -r /mnt/node1/restic-repo/ backup /home/pipo/ansible --tag Ansible --tag node1 restic -r /mnt/node1/restic-repo/ backup /netgear/Bckup-Win --tag Bckup-Win --tag node1 restic -r /mnt/node1/restic-repo/ snapshots Show Backups # # restic -r /mnt/node1/restic-repo snapshots enter password for repository: repository d102ab89 opened successfully, password is correct ID Time Host Tags Paths ----------------------------------------------------------------------------- e7be4fe6 2023-04-08 14:56:54 node1.</description>
+    </item>
   </channel>
 </rss>

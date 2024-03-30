@@ -1,41 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Zilux&#39;s Notes</title>
-    <link>http://zilux.github.io/docs/notes/ansible/</link>
-    <description>Recent content on Zilux&#39;s Notes</description>
+    <title>Zilux&#39;s Docs</title>
+    <link>http://localhost:1313/docs/notes/ansible/</link>
+    <description>Recent content on Zilux&#39;s Docs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://zilux.github.io/docs/notes/ansible/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/docs/notes/ansible/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Collections</title>
-      <link>http://zilux.github.io/docs/notes/ansible/collection/</link>
+      <link>http://localhost:1313/docs/notes/ansible/collection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zilux.github.io/docs/notes/ansible/collection/</guid>
-      <description>Installing collections # Install collections for &amp;ldquo;local use&amp;rdquo; from galaxy/git or hub.
-from galaxy with collection on cmd-line # $ ansible-galaxy collection install community.crypto $ ansible-galaxy collection install /tmp/community-dns-1.2.0.tar.gz -p ./collections From galaxy by requirements file # ansible-galaxy collection install -r requirements.yml -p ./collections requirements.yml: --- collections: - name: community.crypto version: 1.0.2 from git by command-line: # $ ansible-galaxy collection install git@github.com:zilux/ziluxtool_collection.git -p ./collections from git by requirements.yml: # ansible-galaxy collection install -r requirements.</description>
+      <guid>http://localhost:1313/docs/notes/ansible/collection/</guid>
+      <description>Installing collections # Install collections for &amp;ldquo;local use&amp;rdquo; from galaxy/git or hub.&#xA;from galaxy with collection on cmd-line # $ ansible-galaxy collection install community.crypto $ ansible-galaxy collection install /tmp/community-dns-1.2.0.tar.gz -p ./collections From galaxy by requirements file # ansible-galaxy collection install -r requirements.yml -p ./collections requirements.yml: --- collections: - name: community.crypto version: 1.0.2 from git by command-line: # $ ansible-galaxy collection install git@github.com:zilux/ziluxtool_collection.git -p ./collections from git by requirements.yml: # ansible-galaxy collection install -r requirements.</description>
     </item>
-    
-    <item>
-      <title>New</title>
-      <link>http://zilux.github.io/docs/notes/ansible/new/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zilux.github.io/docs/notes/ansible/new/</guid>
-      <description></description>
-    </item>
-    
     <item>
       <title>use playbook in collection</title>
-      <link>http://zilux.github.io/docs/notes/ansible/play_in_collection/</link>
+      <link>http://localhost:1313/docs/notes/ansible/play_in_collection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zilux.github.io/docs/notes/ansible/play_in_collection/</guid>
-      <description>playbook calling play incollection # Play source vars in in first play which are also seen in play2 (import_playbook)
---- - name: Run play in playbooks from collection qrom.test hosts: localhost tasks: - ansible.builtin.debug: msg: play1 - include_vars: pipo.yml - name: Import a playbook ansible.builtin.import_playbook: qrom.test.tester pipo.yml # This file contains:
-geheim=xxxxx playbooks/tester.yml # The content of collections/ansible_collections/qrom/test/playbooks/tester.yml
---- - name: Tester in Playbooks hosts: localhost gather_facts: false collections: - qrom.</description>
+      <guid>http://localhost:1313/docs/notes/ansible/play_in_collection/</guid>
+      <description>Playbook calling play in collection # Play source vars in in first play which are also seen in play2 (import_playbook)&#xA;--- - name: Run play in playbooks from collection qrom.test hosts: localhost tasks: - ansible.builtin.debug: msg: play1 - include_vars: pipo.yml - name: Import a playbook ansible.builtin.import_playbook: qrom.test.tester pipo.yml # This file contains:&#xA;geheim=xxxxx playbooks/tester.yml # The content of collections/ansible_collections/qrom/test/playbooks/tester.yml&#xA;--- - name: Tester in Playbooks hosts: localhost gather_facts: false collections: - qrom.</description>
     </item>
-    
+    <item>
+      <title>ansible.cfg</title>
+      <link>http://localhost:1313/docs/notes/ansible/ansible_cfg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/notes/ansible/ansible_cfg/</guid>
+      <description>Example ansible.cfg # [defaults] inventory = hosts roles_path = roles collections_paths = ./collections:/usr/share/ansible/collections retry_files_enabled = False host_key_checking = False ansible_managed = &amp;#34;Ansible managed using role&amp;#34; remote_user = harry display_skipped_hosts = yes display_ok_hosts = yes [ssh_connection] pipelining = True [galaxy] server_list = ng [galaxy_server.ng] url = https://galaxy.ansible.com/api/ token= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx # # https://ansible.readthedocs.io/projects/galaxy-ng/en/latest/community/userguide/#api # # # Find all roles created by a specific github user. # curl &amp;#39;https://galaxy.ansible.com/api/v1/roles/?github_user=geerlingguy&amp;#39; | jq # Find all roles containing a keyword in the namespace, name or description.</description>
+    </item>
+    <item>
+      <title>Using roles/collections</title>
+      <link>http://localhost:1313/docs/notes/ansible/examples_using_roles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/notes/ansible/examples_using_roles/</guid>
+      <description>Using roles in playbooks # with roles statement # --- - name: Use collection hosts: localhost roles: - hz.coll.pipo - mgrole - role: foo vars: dir: /opt/pipo app_port: 5001 tags: mytag Also like this &amp;hellip;&#xA;--- - name: Use roles hosts: localhost roles: - { role: foo, mes: &amp;#39;aap&amp;#39; } - { role: nah, mes: &amp;#39;noot&amp;#39; } With include_role module # --- - name: include stuff include_role: name: foo_app vars: dir: /tmp/pipo port: 9090 tags: - tag1 - tag2 Include role and run task from it # - include_role: name: let_scammer task_from: invate.</description>
+    </item>
+    <item>
+      <title>Template New</title>
+      <link>http://localhost:1313/docs/notes/ansible/new/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/notes/ansible/new/</guid>
+      <description> # Go Home # </description>
+    </item>
   </channel>
 </rss>

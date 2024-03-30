@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Notes on Zilux&#39;s Notes</title>
-    <link>http://zilux.github.io/docs/notes/</link>
-    <description>Recent content in Notes on Zilux&#39;s Notes</description>
+    <title>Notes on Zilux&#39;s Docs</title>
+    <link>http://localhost:1313/docs/notes/</link>
+    <description>Recent content in Notes on Zilux&#39;s Docs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://zilux.github.io/docs/notes/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/docs/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Example</title>
-      <link>http://zilux.github.io/docs/notes/example/</link>
+      <link>http://localhost:1313/docs/notes/example/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zilux.github.io/docs/notes/example/</guid>
-      <description>
-This is just a place holder # </description>
+      <guid>http://localhost:1313/docs/notes/example/</guid>
+      <description>&#xA;This is just a place holder # </description>
     </item>
-    
   </channel>
 </rss>
