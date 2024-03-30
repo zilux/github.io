@@ -1,7 +1,7 @@
 ---
 weight: 1
 bookFlatSection: false
-bookCollapseSection: true
+bookCollapseSection: false
 title: "Notes"
 ---
 

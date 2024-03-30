@@ -9,14 +9,14 @@ bookToc: false
 # bookSearchExclude: false
 ---
 ---
-# Snap 
+## Snap 
 ---                                                                                                             
 
 Info at [snapcraft](https://snapcraft.io/)
 
 Visit [Quickstart](https://snapcraft.io/docs/quickstart-tour) to get up to speed.
 
-# Some commands:
+## Some commands:
 
 - sudo snap install hugo
 - snap find "media player"
@@ -24,7 +24,7 @@ Visit [Quickstart](https://snapcraft.io/docs/quickstart-tour) to get up to speed
 - snap connections vlc 
 - sudo snap remove vlc 
 
-### Backup/Restore your snap
+## Backup/Restore your snap
 
 - sudo snap save
 - sudo snap restore 30
