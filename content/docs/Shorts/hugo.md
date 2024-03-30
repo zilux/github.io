@@ -33,3 +33,17 @@ Your own data and configs are normally in:
 - hugo.toml
 - content/docsd
 - static
+
+## create new workdirectory from github to test local
+
+```
+git clone <your.github.io>
+cd <your.github.io>
+git submodule init
+git submodule update
+```
+Can also ne done in one go:
+
+```
+git clone --recurse-submodule <your.github.io>
+```
