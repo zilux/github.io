@@ -4,7 +4,7 @@
     <title>Introduction on Zilux&#39;s Docs</title>
     <link>http://localhost:1313/</link>
     <description>Recent content in Introduction on Zilux&#39;s Docs</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
@@ -21,6 +21,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/notes/linux/git/</guid>
       <description>git log # ... ↕ $ alias glp=&amp;quot;git log --pretty=oneline&amp;quot; $ alias glpp=&#39;git log --pretty=format:&amp;quot;%h - %an, %ar : %s&amp;quot;&#39; $ git log -S Test ==&amp;gt; laat alles zien waarin vandering Test mee te maken heeft $ git log --pretty=format:&amp;quot;%h %s&amp;quot; --graph $ git log --oneline amend commit # ... ↕ $ git commit -m &#39;Initial commit&#39; $ git add forgotten_file $ git commit --amend Unstaging a Staged File # $ git restore --staged CONTRIBUTING.</description>
+    </item>
+    <item>
+      <title>Install pyenv</title>
+      <link>http://localhost:1313/docs/notes/python/install_pyenv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/notes/python/install_pyenv/</guid>
+      <description>Install Python environment with pyenv&#xA;Install python - Realpython&#xA;How to install pyenv on RHEL9&#xA;Install rpms&#xA;$ sudo dnf install -y \ make \ gcc \ zlib-devel \ bzip2 \ bzip2-devel \ readline-devel \ sqlite \ sqlite-devel \ openssl-devel \ tk-devel \ libffi-devel \ git Start installer&#xA;$ curl https://pyenv.run | bash Adjust .bashrc&#xA;# Python pyenv # Load pyenv automatically by appending # Load pyenv automatically by appending # the following to # ~/.</description>
     </item>
     <item>
       <title>With ToC</title>
@@ -77,6 +84,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/notes/ansible/ansible_cfg/</guid>
       <description>Example ansible.cfg # [defaults] inventory = hosts roles_path = roles collections_paths = ./collections:/usr/share/ansible/collections retry_files_enabled = False host_key_checking = False ansible_managed = &amp;#34;Ansible managed using role&amp;#34; remote_user = harry display_skipped_hosts = yes display_ok_hosts = yes [ssh_connection] pipelining = True [galaxy] server_list = ng [galaxy_server.ng] url = https://galaxy.ansible.com/api/ token= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx # # https://ansible.readthedocs.io/projects/galaxy-ng/en/latest/community/userguide/#api # # # Find all roles created by a specific github user. # curl &amp;#39;https://galaxy.ansible.com/api/v1/roles/?github_user=geerlingguy&amp;#39; | jq # Find all roles containing a keyword in the namespace, name or description.</description>
+    </item>
+    <item>
+      <title>Snap</title>
+      <link>http://localhost:1313/docs/shorts/snap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/shorts/snap/</guid>
+      <description> Snap # Info at snapcraft&#xA;Visit Quickstart to get up to speed.&#xA;Some commands: # sudo snap install hugo snap find &amp;ldquo;media player&amp;rdquo; sudo snap refresh vlc snap connections vlc sudo snap remove vlc Backup/Restore your snap # sudo snap save sudo snap restore 30 </description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>http://localhost:1313/docs/shorts/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/shorts/hugo/</guid>
+      <description>Hugo # Info at snapcraft&#xA;Visit Quickstart to get up to speed.&#xA;Example install # hugo new site quickstart cd quickstart git init git submodule add https://github.com/alex-shpak/hugo-book themes/book echo &amp;#34;theme = &amp;#39;hugo-book&amp;#39;&amp;#34; &amp;gt;&amp;gt; hugo.toml hugo server Own data # Your own data and configs are normally in:&#xA;hugo.toml content/docsd static create new workdirectory from github to test local # git clone &amp;lt;your.github.io&amp;gt; cd &amp;lt;your.github.io&amp;gt; git submodule init git submodule update Can also ne done in one go:</description>
     </item>
     <item>
       <title>Example</title>
