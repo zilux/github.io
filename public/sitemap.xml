@@ -12,13 +12,13 @@
   </url><url>
     <loc>http://localhost:1313/docs/notes/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/shorts/</loc>
-  </url><url>
     <loc>http://localhost:1313/docs/example/table-of-contents/with-toc/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/notes/ansible/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/notes/linux/dracut/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/shorts/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/notes/ansible/play_in_collection/</loc>
   </url><url>
@@ -39,8 +39,6 @@
     <loc>http://localhost:1313/docs/shorts/snap/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/shorts/hugo/</loc>
-  </url><url>
-    <loc>http://localhost:1313/docs/notes/example/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/example/table-of-contents/</loc>
   </url><url>

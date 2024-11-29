@@ -3,14 +3,333 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="git log # ... ↕ $ alias glp=&quot;git log --pretty=oneline&quot; $ alias glpp=&#39;git log --pretty=format:&quot;%h - %an, %ar : %s&quot;&#39; $ git log -S Test ==&gt; laat alles zien waarin vandering Test mee te maken heeft $ git log --pretty=format:&quot;%h %s&quot; --graph $ git log --oneline amend commit # ... ↕ $ git commit -m &#39;Initial commit&#39; $ git add forgotten_file $ git commit --amend Unstaging a Staged File # $ git restore --staged CONTRIBUTING.">
+<meta name="description" content="
+
+  git log
+  #
+
+
+
+  
+    
+      ...
+      ↕
+    
+    
+    
+      $ alias glp=&quot;git log --pretty=oneline&quot;  
+$ alias glpp=&#39;git log --pretty=format:&quot;%h - %an, %ar : %s&quot;&#39;  
+$ git log -S Test      ==&gt; laat alles zien waarin vandering Test mee te maken heeft  
+$ git log --pretty=format:&quot;%h %s&quot; --graph  
+$ git log --oneline
+
+
+    
+  
+
+
+
+  amend commit
+  #
+
+
+
+  
+    
+      ...
+      ↕
+    
+    
+    
+      $ git commit -m &#39;Initial commit&#39;
+$ git add forgotten_file
+$ git commit --amend
+
+
+    
+  
+
+
+
+  Unstaging a Staged File
+  #
+
+$ git restore --staged CONTRIBUTING.md
+
+
+  Unmodifying a Modified File
+  #
+
+$ git restore CONTRIBUTING.md
+
+
+  checkout a commit
+  #
+
+$ git checkout 3c65a398d82b8ee2c6c966e596169432053af533
+
+
+  checkout a commit in new branch
+  #
+
+$ git checkout -b newbranch 3c65a39
+
+
+  delete local branch
+  #
+
+$ git branch -d pipo
+
+
+  delete remote branch
+  #
+
+$ git push origin --delete remoteBranchName
+or
+$ git push origin :fix/auth
+
+
+  sync branch list
+  #
+
+$ git fetch [-p]
+
+
+  show local en remote branches
+  #
+
+$ git branch -a     \# local &#43; remote
+$ git branch -r     \# alleen remote
+
+
+  Return to previous commit
+  #
+
+
+
+  
+    
+      ...
+      ↕
+    
+    
+    
+      $ git log --oneline git 
+$ checkout &lt;commit-id&gt; .   # watch to include &#39;.&#39;
+$ git add .
+$ git commit -m &quot;Reverting to &lt;commit-id&gt;&quot;
+$ git push
+
+
+    
+  
+
+
+
+  How to remove git commit history
+  #
+
+
+
+  
+    
+      ...
+      ↕
+    
+    
+    
+      git checkout --orphan latest_branch.
+git add -A.
+git commit -am &quot;Initial commit message&quot; #Committing the changes.
+git branch -D main #Deleting master branch.
+git branch -m main #renaming branch as master.
+git push -f origin main #pushes to master branch.
+
+
+    
+  
+
+
+
+  remotes
+  #
+
+
+
+  
+    
+      ...
+      ↕
+    
+    
+    
+      $ git clone https://github.com/schacon/ticgit
+$ cd ticgit
+$ git remote
+$ git remote -v
+
+$ git fetch
+$ git pull
+$ git push 
+
+$ git checkout -b MyNewBranch
+$ git push -u origin MyNewBranch
+$ git push origin -d MyNewBranch    \# delete remote branch
+
+
+    
+  
+
+
+
+  inspecting remote
+  #
+
+$ git remote show origin
+
+
+  Tags
+  #
+
+
+  listing tags
+  #
+
+$ git tag
+$ git tag v1.0.3
+
+
+  create Annotated Tags
+  #
+
+
+
+  
+    
+      ...
+      ↕
+    
+    
+    
+      $ git tag -a v1.0 -m &quot;my version 1.0&quot;
+$ git push origin v1.0          \# tag pushen naar remote
+$ git push origin --tags        \# alle tags in 1 keer naar remote pushen
+$ git push --tags
+
+
+    
+  
+
+
+
+  lightweigt tags
+  #
+
+$ git tag v1.0.1
+$ git show v1.0.1
+
+
+  list remote tags
+  #
+
+$ git ls-remote --tags origin
+$ git fetch         \# haal ook alle tags op
+
+
+  Deleting tags
+  #
+
+$ git tag -d v1.4-lw
+$ git push origin --delete v1.4-lw
+
+
+  checking out tags
+  #
+
+$ git fetch         \# haal ook alle tags op 
+$ git checkout -b Feature/v1 v1.0.1
+
+
+  git aliases
+  #
+
+
+
+  
+    
+      ...
+      ↕
+    
+    
+    
+      $ git config --global alias.ll &#39;log --pretty=format:&quot;%h %s&quot; --graph&#39;
+$ git config --global alias.co checkout
+$ git config --global alias.br branch
+$ git config --global alias.ci commit
+$ git config --global alias.st status
+
+
+    
+  
+
+
+
+  Submodules
+  #
+
+
+  aanmaken
+  #
+
+
+
+  
+    
+      ...
+      ↕
+    
+    
+    
+      $ git clone  git@github.com:zilux/template_play.git
+$ cd template_play/
+$ mkdir -p collections/ansible_collections
+$ git submodule add git@github.com:zilux/template_collection.git collections/ansible_collections/template_collection.git template_collection
+
+
+    
+  
+
+
+
+  uitchecken
+  #
+
+
+
+  
+    
+      ...
+      ↕
+    
+    
+    
+      $ git clone https://github.com/chaconinc/MainProject
+$ git submodule init
+$ git submodule update
+
+
+    
+  
+
+
+of dit alles in 1 go">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/notes/linux/git/">
   <meta property="og:site_name" content="Zilux&#39;s Docs">
   <meta property="og:title" content="Git">
-  <meta property="og:description" content="git log # ... ↕ $ alias glp=&#34;git log --pretty=oneline&#34; $ alias glpp=&#39;git log --pretty=format:&#34;%h - %an, %ar : %s&#34;&#39; $ git log -S Test ==&gt; laat alles zien waarin vandering Test mee te maken heeft $ git log --pretty=format:&#34;%h %s&#34; --graph $ git log --oneline amend commit # ... ↕ $ git commit -m &#39;Initial commit&#39; $ git add forgotten_file $ git commit --amend Unstaging a Staged File # $ git restore --staged CONTRIBUTING.">
-  <meta property="og:locale" content="en-us">
+  <meta property="og:description" content="git log # ... ↕ $ alias glp=&#34;git log --pretty=oneline&#34; $ alias glpp=&#39;git log --pretty=format:&#34;%h - %an, %ar : %s&#34;&#39; $ git log -S Test ==&gt; laat alles zien waarin vandering Test mee te maken heeft $ git log --pretty=format:&#34;%h %s&#34; --graph $ git log --oneline amend commit # ... ↕ $ git commit -m &#39;Initial commit&#39; $ git add forgotten_file $ git commit --amend Unstaging a Staged File # $ git restore --staged CONTRIBUTING.md Unmodifying a Modified File # $ git restore CONTRIBUTING.md checkout a commit # $ git checkout 3c65a398d82b8ee2c6c966e596169432053af533 checkout a commit in new branch # $ git checkout -b newbranch 3c65a39 delete local branch # $ git branch -d pipo delete remote branch # $ git push origin --delete remoteBranchName or $ git push origin :fix/auth sync branch list # $ git fetch [-p] show local en remote branches # $ git branch -a \# local &#43; remote $ git branch -r \# alleen remote Return to previous commit # ... ↕ $ git log --oneline git $ checkout &lt;commit-id&gt; . # watch to include &#39;.&#39; $ git add . $ git commit -m &#34;Reverting to &lt;commit-id&gt;&#34; $ git push How to remove git commit history # ... ↕ git checkout --orphan latest_branch. git add -A. git commit -am &#34;Initial commit message&#34; #Committing the changes. git branch -D main #Deleting master branch. git branch -m main #renaming branch as master. git push -f origin main #pushes to master branch. remotes # ... ↕ $ git clone https://github.com/schacon/ticgit $ cd ticgit $ git remote $ git remote -v $ git fetch $ git pull $ git push $ git checkout -b MyNewBranch $ git push -u origin MyNewBranch $ git push origin -d MyNewBranch \# delete remote branch inspecting remote # $ git remote show origin Tags # listing tags # $ git tag $ git tag v1.0.3 create Annotated Tags # ... ↕ $ git tag -a v1.0 -m &#34;my version 1.0&#34; $ git push origin v1.0 \# tag pushen naar remote $ git push origin --tags \# alle tags in 1 keer naar remote pushen $ git push --tags lightweigt tags # $ git tag v1.0.1 $ git show v1.0.1 list remote tags # $ git ls-remote --tags origin $ git fetch \# haal ook alle tags op Deleting tags # $ git tag -d v1.4-lw $ git push origin --delete v1.4-lw checking out tags # $ git fetch \# haal ook alle tags op $ git checkout -b Feature/v1 v1.0.1 git aliases # ... ↕ $ git config --global alias.ll &#39;log --pretty=format:&#34;%h %s&#34; --graph&#39; $ git config --global alias.co checkout $ git config --global alias.br branch $ git config --global alias.ci commit $ git config --global alias.st status Submodules # aanmaken # ... ↕ $ git clone git@github.com:zilux/template_play.git $ cd template_play/ $ mkdir -p collections/ansible_collections $ git submodule add git@github.com:zilux/template_collection.git collections/ansible_collections/template_collection.git template_collection uitchecken # ... ↕ $ git clone https://github.com/chaconinc/MainProject $ git submodule init $ git submodule update of dit alles in 1 go">
+  <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
 <title>Git | Zilux&#39;s Docs</title>
@@ -18,10 +337,7 @@
 <link rel="icon" href="/favicon.png" >
 <link rel="stylesheet" href="/book.min.36a92d63819c3a82b9860e76ea18538821a3b6f93e4653e6b8205b29337fbc05.css" integrity="sha256-NqktY4GcOoK5hg526hhTiCGjtvk&#43;RlPmuCBbKTN/vAU=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.d27050fd6351d3c7a82ca5131d297e30cc9330ceef3495954aa5f3a980de0be0.js" integrity="sha256-0nBQ/WNR08eoLKUTHSl&#43;MMyTMM7vNJWVSqXzqYDeC&#43;A=" crossorigin="anonymous"></script>
-
-  
-
+  <script defer src="/en.search.min.fd336b5aacfe0c7dc34c25758aaa6c34ac896749a904e2c7c540f6aa09a47772.js" integrity="sha256-/TNrWqz&#43;DH3DTCV1iqpsNKyJZ0mpBOLHxUD2qgmkd3I=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -86,8 +402,8 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-721ec852e3d00443e664aaf5892a753f" class="toggle" checked />
-    <label for="section-721ec852e3d00443e664aaf5892a753f" class="flex justify-between">
+    <input type="checkbox" id="section-745d790087d2a912b9318c511fae730f" class="toggle" checked />
+    <label for="section-745d790087d2a912b9318c511fae730f" class="flex justify-between">
       <a href="/docs/notes/linux/" class="">Linux</a>
     </label>
   
@@ -172,8 +488,8 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-8c1e6e8c83d13f11720d8183e70d3448" class="toggle"  />
-    <label for="section-8c1e6e8c83d13f11720d8183e70d3448" class="flex justify-between">
+    <input type="checkbox" id="section-e46ca2075e9186b76f16cefd443bb402" class="toggle"  />
+    <label for="section-e46ca2075e9186b76f16cefd443bb402" class="flex justify-between">
       <a href="/docs/notes/ansible/" class="">Ansible</a>
     </label>
   
@@ -258,8 +574,8 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-7c85b1aaa638d8c796ab3199e70a42b1" class="toggle"  />
-    <label for="section-7c85b1aaa638d8c796ab3199e70a42b1" class="flex justify-between">
+    <input type="checkbox" id="section-ce5fbe0e257ca850feb9f41e59942502" class="toggle"  />
+    <label for="section-ce5fbe0e257ca850feb9f41e59942502" class="flex justify-between">
       <a href="/docs/notes/python/" class="">Python</a>
     </label>
   
@@ -281,19 +597,6 @@ https://github.com/alex-shpak/hugo-book
       
     
   </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/notes/example/" class="">Example</a>
-  
 
         </li>
       
@@ -387,53 +690,10 @@ https://github.com/alex-shpak/hugo-book
 
   <label for="toc-control">
     
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
-    
   </label>
 </div>
 
 
-  
-  <aside class="hidden clearfix">
-    
-  
-<nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#git-log">git log</a></li>
-        <li><a href="#amend-commit">amend commit</a></li>
-        <li><a href="#unstaging-a-staged-file">Unstaging a Staged File</a></li>
-        <li><a href="#unmodifying-a-modified-file">Unmodifying a Modified File</a></li>
-        <li><a href="#checkout-a-commit">checkout a commit</a></li>
-        <li><a href="#checkout-a-commit-in-new-branch">checkout a commit in new branch</a></li>
-        <li><a href="#delete-local-branch">delete local branch</a></li>
-        <li><a href="#delete-remote-branch">delete remote branch</a></li>
-        <li><a href="#sync-branch-list">sync branch list</a></li>
-        <li><a href="#show-local-en-remote-branches">show local en remote branches</a></li>
-        <li><a href="#return-to-previous-commit">Return to previous commit</a></li>
-        <li><a href="#how-to-remove-git-commit-history">How to remove git commit history</a></li>
-        <li><a href="#remotes">remotes</a></li>
-        <li><a href="#inspecting-remote">inspecting remote</a></li>
-        <li><a href="#tags">Tags</a></li>
-        <li><a href="#listing-tags">listing tags</a></li>
-        <li><a href="#create-annotated-tags">create Annotated Tags</a></li>
-        <li><a href="#lightweigt-tags">lightweigt tags</a></li>
-        <li><a href="#list-remote-tags">list remote tags</a></li>
-        <li><a href="#deleting-tags">Deleting tags</a></li>
-        <li><a href="#checking-out-tags">checking out tags</a></li>
-        <li><a href="#git-aliases">git aliases</a></li>
-        <li><a href="#submodules">Submodules</a></li>
-        <li><a href="#aanmaken">aanmaken</a></li>
-        <li><a href="#uitchecken">uitchecken</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-
-
-  </aside>
   
  
       </header>
@@ -806,49 +1066,6 @@ $ git submodule update
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
-    
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
-  
-<nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#git-log">git log</a></li>
-        <li><a href="#amend-commit">amend commit</a></li>
-        <li><a href="#unstaging-a-staged-file">Unstaging a Staged File</a></li>
-        <li><a href="#unmodifying-a-modified-file">Unmodifying a Modified File</a></li>
-        <li><a href="#checkout-a-commit">checkout a commit</a></li>
-        <li><a href="#checkout-a-commit-in-new-branch">checkout a commit in new branch</a></li>
-        <li><a href="#delete-local-branch">delete local branch</a></li>
-        <li><a href="#delete-remote-branch">delete remote branch</a></li>
-        <li><a href="#sync-branch-list">sync branch list</a></li>
-        <li><a href="#show-local-en-remote-branches">show local en remote branches</a></li>
-        <li><a href="#return-to-previous-commit">Return to previous commit</a></li>
-        <li><a href="#how-to-remove-git-commit-history">How to remove git commit history</a></li>
-        <li><a href="#remotes">remotes</a></li>
-        <li><a href="#inspecting-remote">inspecting remote</a></li>
-        <li><a href="#tags">Tags</a></li>
-        <li><a href="#listing-tags">listing tags</a></li>
-        <li><a href="#create-annotated-tags">create Annotated Tags</a></li>
-        <li><a href="#lightweigt-tags">lightweigt tags</a></li>
-        <li><a href="#list-remote-tags">list remote tags</a></li>
-        <li><a href="#deleting-tags">Deleting tags</a></li>
-        <li><a href="#checking-out-tags">checking out tags</a></li>
-        <li><a href="#git-aliases">git aliases</a></li>
-        <li><a href="#submodules">Submodules</a></li>
-        <li><a href="#aanmaken">aanmaken</a></li>
-        <li><a href="#uitchecken">uitchecken</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-
- 
-      </div>
-    </aside>
     
   </main>
 

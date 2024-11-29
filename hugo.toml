@@ -9,3 +9,4 @@ theme = 'hugo-book'
   BookTheme = 'dark'
   # BookLogo = 'ziluxlogo.png'
   BookLogo = 'FreeBSD120trans.png'
+  BookToC = false 
